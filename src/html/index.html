@@ -14,6 +14,36 @@
         @@include('blocks/block3.html')
         @@include('blocks/block4.html')
         @@include('blocks/block5.html')
+        @@include('blocks/results.html')
+        @@include('blocks/graphs.html', {
+            "prefix": "graph1",
+            "items": [
+                {
+                    "title": "Клики Яндекс.Директ",
+                    "sub": "Количество кликов",
+                    "color": "pink",
+                    "image": "graph11"
+                },
+                {
+                    "title": "Охват Яндекс.Директ",
+                    "sub": "Количество показов",
+                    "color": "green",
+                    "image": "graph12"
+                },
+                {
+                    "title": "%CTR Яндекс.Директ",
+                    "sub": "%CTR",
+                    "color": "blue",
+                    "image": "graph13"
+                },
+                {
+                    "title": "Стоимость клика Яндекс.Директ",
+                    "sub": "<span class='is--rub'>&#8381;</span>&#92;&#92;клик",
+                    "color": "bluew",
+                    "image": "graph14"
+                }
+            ]
+        })
     </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="dist/js/main.js"></script>

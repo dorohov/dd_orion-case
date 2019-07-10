@@ -145,8 +145,9 @@ function createBundleCss() {
 
 function createBundleJs() {
     return gulp.src([
+                './dist/js/jquery.animateNumber.min.js',
+                './dist/js/jquery.visible.min.js',
                 './dist/js/main.js',
-                './dist/js/svg4everybody.min.js',
             ])
             .pipe(sourcemaps.init())
             .pipe(concat('bundle.js'))
@@ -175,7 +176,7 @@ gulp.task('build', function() {
 })
 
 gulp.task('default', gulp.series(
-    gulp.parallel('html', 'css', 'js', 'svgMap', 'imageMinify'),
-    // gulp.parallel('html', 'css', 'js', 'createBundleJs', 'svgMap', 'imageMinify'),
+    // gulp.parallel('html', 'css', 'js', 'svgMap', 'imageMinify'),
+    gulp.parallel('html', 'css', 'js', 'createBundleJs', 'svgMap', 'imageMinify'),
     gulp.parallel('build', 'browser_sync')
 ))

@@ -217,6 +217,9 @@
             padding-top: 115px;
             padding-bottom: 90px;
             background: #F2F3F8;
+            svg {
+                height: auto;
+            }
             &__heading {
                 display: flex;
                 justify-content: center;
@@ -274,6 +277,9 @@
             border-collapse: collapse;
             border: 1px solid #9A9A9A;
             text-align: center;
+            svg {
+                fill: #fff;
+            }
             th {
                 span.is--ruble {
                     font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
@@ -380,6 +386,9 @@
     &__graphs {
         overflow: hidden;
         padding-bottom: 70px;
+        svg {
+            height: auto;
+        }
         &__inner {
             &__list {
                 margin: 0 -150px;
